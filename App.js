@@ -3,6 +3,15 @@ import Die from "./Die"
 
 export default function App( ) {
     
+    function allNewDice() {
+        const newDice = []
+        let randomNumber = Math.floor(Math.random() * 6)
+        for (let i = 0; i < 10; i++) {
+            newDice.push(randomNumber)
+        }
+        return newDice
+    }
+
     return (
         <main className="dice-container">
             <Die value="1" />
