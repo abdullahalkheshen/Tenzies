@@ -20,9 +20,18 @@ export default function App( ) {
         return newDice
     }
 
+    function rollDice() {
+        setDice(allNewDice())
+    }
+
+    function holdDice () {
+        console.log(id);
+    }
+
     diceElements = dice.map(
-        die => <Die value={die.value} key={die.id} isHeld={die.isHeld}/>
+        die => <Die value={die.value} key={die.id} isHeld={die.isHeld} holdDice={() => holdDice(die.id)}/>
     )
+
 
     return (
         <main className="dice-container">
