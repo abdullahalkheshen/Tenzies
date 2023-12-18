@@ -21,6 +21,7 @@ export default function App( ) {
     return (
         <main className="dice-container">
             {diceElements}
+            <button className="roll-dice" onClick={rollDice}>Roll the Dice</button>
         </main>
     )
 }
