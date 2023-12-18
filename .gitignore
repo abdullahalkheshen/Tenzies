@@ -1,0 +1,9 @@
+# ignore whatever necessary
+node_modules
+dist
+gitignore
+package-lock.json
+package.json
+index.pack.js
+```
+
