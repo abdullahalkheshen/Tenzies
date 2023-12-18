@@ -47,9 +47,17 @@ export default function App( ) {
 
 
     return (
-        <main className="dice-container">
-            {diceElements}
-            <button className="roll-dice" onClick={rollDice}>Roll the Dice</button>
+        <main>
+            <h1 className="title">Tenzies</h1>
+            <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+            
+            <div>
+                {diceElements}
+            </div>
+            
+            <button className="roll-dice" onClick={rollDice}>
+                Roll the Dice
+            </button>
         </main>
     )
 }
