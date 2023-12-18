@@ -21,7 +21,7 @@ export default function App( ) {
     }
 
     diceElements = dice.map(
-        die => <Die value={die.value} key={die.id}/>
+        die => <Die value={die.value} key={die.id} isHeld={die.isHeld}/>
     )
 
     return (
